@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple grid layout</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="container_grid-H">
+        <h1>
+            SIMPLE LIGHTWEIGHT GRID LAYOUT
+            <br/>resize browser to test grid
+        </h1>
+        <div id="promos-wrapper-intro">
+            <div class="promo promo-active double" style="background-color:#fff">
+                <div class="text-paragraph" style="padding-top: 20px;border-top: none">INCLUDE:</div>
+                <div class="code-paragraph">&lt;script src="js/gridlayout.js"&gt;&lt;script&gt;</div>
+                <div class="text-paragraph">
+                    USAGE:
+                </div>
+                <div class="code-paragraph">
+                    var grid = new GridLayout('promos-wrapper', {
+                    <br/> &nbsp;&nbsp;&nbsp;selector: '.promo',
+                    <br/> &nbsp;&nbsp;&nbsp;speed: 400,
+                    <br/> &nbsp;&nbsp;&nbsp;colwidth: 200,
+                    <br/> &nbsp;&nbsp;&nbsp;debuglog: false,
+                    <br/> &nbsp;&nbsp;&nbsp;animate: true
+                    <br/> });
+                    <br/>
+                </div>
+            </div>
+            <div class="promo" style="background-color:#eee;"></div>
+            <div class="promo" style="background-color:#f5f4f4">
+                <div class="text-paragraph" style="padding-top: 20px;border-top: none">OPTIONS:</div>
+                <div class="code-paragraph">
+                    <span class="code-option">selector</span>: '.promo',
+                    <span class="code-comment">CSS selector for grid elements</span>
+                    <span class="code-option">animate</span>: false,
+                    <span class="code-comment">Include css animation when position changes</span>
+                    <span class="code-option">centerwrapper</span>: true,
+                    <span class="code-comment">Center wrapper element</span>
+                </div>
+            </div>
+            <div class="promo" style="background-color:#f7f7f7">
+                <div class="code-paragraph">
+                    <span class="code-option">speed</span>: 500,
+                    <span class="code-comment">Speed of css animation in miliseconds (works when option animate is set to true)</span>
+                    <span class="code-option">easing</span>: 'linear',
+                    <span class="code-comment">Animations easing, CSS format</span>
+                    <span class="code-option">colwidth</span>: 400,
+                    <span class="code-comment">Set colwidth for easer computing</span>
+                </div>
+            </div>
+            <div class="promo" style="background-color:#f5f4f4">
+                <div class="code-paragraph">
+                    <span class="code-option">resizedelay</span>: 200,
+                    <span class="code-comment">Delay on resize</span>
+                    <span class="code-option">debuglog</span>: false,
+                    <span class="code-comment">Write in console basic informations</span>
+                    <span class="code-option">debugelems</span>: false
+                    <span class="code-comment">Write in console geometry properties for all grid elements</span>
+                </div>
+            </div>
+
+            <div class="promo" style="background-color:#eee;"></div>
+            <div class="promo" style="background-color:#ddd;"></div>
+            <div class="promo" style="background-color:#eee;"></div>
+            <div class="promo" style="background-color:#ddd;"></div>
+
+            <div class="promo" style="background-color:#eee;"></div>
+            <div class="promo" style="background-color:#ddd;"></div>
+            <div class="promo" style="background-color:#eee;"></div>
+            <div class="promo" style="background-color:#ddd;"></div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <h2 style="font-size: 12px;">
+        <span style="text-transform: uppercase">free for use and modification</span>
+        <br/>
+        <br/> Djordje Stojanovic
+        <br/> <a href="mailto:djordje100janovic@gmail.com">djordje100janovic@gmail.com</a>
+        <br/>2018
+    </h2>
+
+    <script src="js/gridlayout.js"></script>
+    <script type="text/javascript">
+    var grid1 = new GridLayout('promos-wrapper-intro', {
+        selector: '.promo',
+        speed: 400,
+        colwidth: 200,
+        debuglog: false,
+        debugelems: false,
+        animate: true,
+        centerwrapper: true,
+        fullwidthwrapper: false
+    });
+
+
+
+    </script>
+</body>
+
+</html>
